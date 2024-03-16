@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <title> São Paio Sc</title>
+        <link rel="stylesheet" href="telemovel.css">
+	    <link rel="stylesheet" media="screen and (min-width: 800px)" href="style.css">
+        <link rel="shortcut icon" type="image/svg" href="Icons/logo.svg"/>
+    </head>
+    <body>
+        <nav class="menu">
+            <ul>
+                <li class="menufoto"><a class="logo">
+                    <img src="Icons/logo.svg" class="fas fa-home">
+                    <span class="nav-item"> São Paio Sc </span>
+                </a></li>
+                <li class="menufoto"><a href="index.html" class="iconmenu">
+                    <img src="Icons/logo.svg" class="fas fa-home">
+                    <span class="nav-item"> Clube </span>
+                </a></li>
+                <li class="menufoto"><a href="index.html" class="iconmenu">
+                    <img src="Icons/bola.svg" class="fas fa-home">
+                    <span class="nav-item"> Escalões </span>
+                </a></li>
+                <li class="menufoto"><a href="socios.html" class="iconmenu">
+                    <img src="Icons/socio.svg" class="fas fa-home">
+                    <span class="nav-item"> Sócios </span>
+                </a></li>
+                <li class="menufoto"><a href="../noticias.html" class="iconmenu">
+                    <img src="Icons/jornal.svg" class="fas fa-home">
+                    <span class="nav-item"> Notícias </span>
+                </a></li>
+                <li class="menufoto"><a href="../agenda/jogo.html" class="iconmenu"> 
+                    <img src="Icons/Agenda.svg" class="fas fa-home">
+                    <span class="nav-item"> Agenda </span>
+                </a></li>
+                <li class="menufoto"><a href="../bilheteira.html" class="iconmenu">
+                    <img src="Icons/bilhete.svg" class="fas fa-home">
+                    <span class="nav-item"> Bilhetes </span>
+                </a></li>
+                <li class="menufoto"><a href="../Loja/loja.html" class="iconmenu">
+                    <img src="Icons/loja.svg" class="fas fa-home">
+                    <span class="nav-item"> Loja </span>
+                </a></li>
+                <li class="menufoto"><a href="../index.html" class="iconmenu">
+                    <img src="Icons/aplicacao.svg" class="fas fa-home">
+                    <span class="nav-item"> App </span>
+                </a></li>
+                <li class="menufoto"><a href="../footer/contacto.html" class="iconmenu">
+                    <img src="Icons/apoio.svg" class="fas fa-home">
+                    <span class="nav-item"> Apoio ao Adepto </span>
+                </a></li>
+                <li class="menufoto"><a href="../multimedia.html" class="iconmenu">
+                    <img src="Icons/camera.svg" class="fas fa-home">
+                    <span class="nav-item"> Multimédia </span>
+                </a></li>
+                <li class="menufoto"><a href="../revista.html" class="iconmenu">
+                    <img src="Icons/revista.svg" class="fas fa-home">
+                    <span class="nav-item"> Revista </iconmenu>
+                </a></li>
+                <li class="menufoto"><a href="../museu.html" class="iconmenu">
+                    <img src="Icons/taca.svg" class="fas fa-home">
+                    <span class="nav-item"> Troféus/Museu </span>
+                </a></li>
+                <li class="menufoto"><a href="../patrocinadores.html" class="iconmenu">
+                    <img src="Icons/Patrocinadores.svg" class="fas fa-home">
+                    <span class="nav-item"> Patrocinadores </span>
+                </a></li>
+            </ul>
+        </nav>
+
+        <div class="seccao">
+            <section>
+                <article class="iniciarsessao">
+                    <h1><a href="login.html" class="textois">Iniciar Sessão</a></h1>
+                </article>
+            </section>
+        </div>
+
+
+            <section class="conteudo">
+
+                <h1 class="textoloja">Faz-te Sócio</h1>
+                <br>
+                <form action="contacto_bd.php">
+                    <div class="socio">
+                        <div class="caixa">
+                            <div class="caixatexto">
+                                <span>Nome</span>
+                                <input type="text" placeholder="Seu Nome de Sócio" name="primeironome">
+                            </div>
+                            <div class="caixatexto">
+                                <span>Idade</span>
+                                <input type="text" placeholder="Sua Idade" name="ultimonome"></input>
+                            </div>
+                        </div>
+
+                        <div class="caixa">
+                            <div class="caixatexto">
+                                <span>Email</span>
+                                <input type="text" placeholder="Seu email"  name="email">
+                            </div>
+                            <div class="caixatexto">
+                                <span>Telefone</span>
+                                <input type="text" placeholder="Seu número de Telemóvel" name="numero">
+                            </div>
+                        </div>
+
+                        <div class="texto">
+                            <div class="caixatexto">
+                                <span>Mensagem</span>
+                                <textarea placeholder="Escreve a tua mensagem aqui..." name="mensagem"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="texto">
+                            <div class="caixatexto">
+                                <input type="submit" value="Enviar">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                
+                <br>
+                <br>
+                <br>
+
+                <h1 class="textoloja">Tabela de preços Sócio São Paio SC</h1>
+
+                <table class="tabelapreco">
+                    <tr class="tabelatitulo">
+                      <th class="coluna">Categoria</th>
+                      <th class="coluna">Idade</th>
+                      <th class="coluna"> Jóia</th>
+                      <th class="coluna">Cartão</th>
+                      <th class="coluna">Quota</th>
+                      <th class="coluna"> Incrição</th>
+                    </tr>
+                    <tr class="tabelapreco">
+                      <td class="coluna">Sénior</td>
+                      <td class="coluna">18+</td>
+                      <td class="coluna">20€</td>
+                      <td class="coluna">10€</td>
+                      <td class="coluna">12€/mês</td>
+                      <td class="coluna">66€</td>
+                    </tr>
+                    <tr class="tabelapreco">
+                        <td class="coluna">Junior</td>
+                        <td class="coluna">10-17</td>
+                        <td class="coluna">10€</td>
+                        <td class="coluna">10€</td>
+                        <td class="coluna">4€/mês</td>
+                        <td class="coluna">32€</td>
+                    </tr>
+                    <tr class="tabelapreco">
+                        <td class="coluna">Infantil</td>
+                        <td class="coluna">0-9</td>
+                        <td class="coluna">10€</td>
+                        <td class="coluna">10€</td>
+                        <td class="coluna">Isento</td>
+                        <td class="coluna">20€</td>
+                    </tr>
+                  </table>
+            </section>
+
+            <footer>
+                <br>
+                <article class="redessociais">
+                    <a href="https://www.facebook.com/spaio"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/spaiosc/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.instagram.com/adspaiosc/"><ion-icon name="logo-instagram"></ion-icon></a>
+                </article>
+                <article class="rodape">
+                    <a href="https://www.livroreclamacoes.pt/Pedido/Reclamacao" class="inforodape">Livro de reclamação</a>
+                    <a href="footer/termos.html" class="inforodape">Termos & condições</a>
+                    <a href="footer/protecaodados.html" class="inforodape">Privacidade</a>
+                    <a href="footer/contacto.html" class="inforodape">Contactos</a>
+                </article>  
+                <article class="direitos">
+                    <p class="textorodape">Site Produzido por Miguel Almeida. Proibido a utilização deste site sem permissao do São Paio SC © 2023</p>
+                </article>
+            </footer>
+    
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

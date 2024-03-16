@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04-Mar-2024 às 18:00
+-- Tempo de geração: 14-Mar-2024 às 13:10
 -- Versão do servidor: 10.4.19-MariaDB
 -- versão do PHP: 8.0.7
 
@@ -97,29 +97,6 @@ CREATE TABLE `jogadores` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `login`
---
-
-CREATE TABLE `login` (
-  `id_login` int(11) NOT NULL,
-  `nome_login` varchar(100) NOT NULL,
-  `gmail_login` varchar(500) NOT NULL,
-  `senha_login` varchar(200) NOT NULL,
-  `genero_login` int(11) NOT NULL,
-  `nascimento_login` date NOT NULL,
-  `conta_login` varchar(9) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Extraindo dados da tabela `login`
---
-
-INSERT INTO `login` (`id_login`, `nome_login`, `gmail_login`, `senha_login`, `genero_login`, `nascimento_login`, `conta_login`) VALUES
-(1, 'Miguel', 'migueljuniorabc40@gmail.com', 'MiguelAlmeida', 2, '0000-00-00', 'S');
-
--- --------------------------------------------------------
-
---
 -- Estrutura da tabela `multimedia`
 --
 
@@ -170,6 +147,31 @@ CREATE TABLE `socios` (
   `tlm_socio` char(9) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `utilizadores`
+--
+
+CREATE TABLE `utilizadores` (
+  `id_login` int(11) NOT NULL,
+  `utilizador` varchar(100) NOT NULL,
+  `gmail_login` varchar(500) NOT NULL,
+  `senha` varchar(200) NOT NULL,
+  `genero_login` int(11) NOT NULL,
+  `nascimento_login` date NOT NULL,
+  `conta_login` varchar(9) NOT NULL,
+  `tipo` enum('normal','admin','socio','jogador','treinador') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `utilizadores`
+--
+
+INSERT INTO `utilizadores` (`id_login`, `utilizador`, `gmail_login`, `senha`, `genero_login`, `nascimento_login`, `conta_login`, `tipo`) VALUES
+(1, 'Miguel', 'migueljuniorabc40@gmail.com', 'MiguelAlmeida', 2, '0000-00-00', 'S', 'normal'),
+(2, 'admin', 'a21193@aevizela.edu.pt', '12345', 0, '0000-00-00', 'S', 'admin');
+
 --
 -- Índices para tabelas despejadas
 --
@@ -205,12 +207,6 @@ ALTER TABLE `jogadores`
   ADD PRIMARY KEY (`id_jogador`);
 
 --
--- Índices para tabela `login`
---
-ALTER TABLE `login`
-  ADD PRIMARY KEY (`id_login`);
-
---
 -- Índices para tabela `multimedia`
 --
 ALTER TABLE `multimedia`
@@ -233,6 +229,12 @@ ALTER TABLE `revista`
 --
 ALTER TABLE `socios`
   ADD PRIMARY KEY (`id_socio`);
+
+--
+-- Índices para tabela `utilizadores`
+--
+ALTER TABLE `utilizadores`
+  ADD PRIMARY KEY (`id_login`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
