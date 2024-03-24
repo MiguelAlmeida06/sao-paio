@@ -5,7 +5,7 @@
         <title> São Paio Sc</title>
         <link rel="stylesheet" href="telemovel.css">
 	    <link rel="stylesheet" media="screen and (min-width: 800px)" href="style.css">
-        <link rel="shortcut icon" type="image/svg" href="Icons/"/>
+        <link rel="shortcut icon" type="image/svg" href="img/logo.svg"/>
         
     </head>
     <body>
@@ -23,7 +23,7 @@
                     <img src="Icons/bola.svg" class="fas fa-home">
                     <span class="nav-item"> Escalões </span>
                 </a></li>
-                <li class="menufoto"><a href="Socios/socios.html" class="iconmenu">
+                <li class="menufoto"><a href="socios.html" class="iconmenu">
                     <img src="Icons/socio.svg" class="fas fa-home">
                     <span class="nav-item"> Sócios </span>
                 </a></li>
@@ -133,13 +133,66 @@
               
               <div id="Tab2" class="tabcontent">
                 <h3 class="titulo">Estabelecimento</h3>
-                <p>Este é o conteúdo da segunda aba.</p>
+                    <div class="contact-info">
+                        <div>
+                            <span><ion-icon name="location-outline"></ion-icon></span>
+                            <p>Rua da Alegria (Campo da Covinha)</p>
+                        </div>
+                        <div>
+                            <span><ion-icon name="mail-outline"></ion-icon></span>
+                            <a href="mailto:migueljuniorabc40@gmail.com">migueljuniorabc40@gmail.com</a>
+                        </div>
+                        <div>
+                            <span><ion-icon name="call-outline"></ion-icon></span>
+                            <a href="tel:+351935255407">+351 935 255 407</a>
+                        </div>
+                        <ul class="social-icons">
+                            <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+                            <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        </ul>
+                    </div>
+
+                    <div id="modelo3D"></div>
+
               </div>
+                
               
-              <div id="Tab3" class="tabcontent">
-                <h3 class="titulo">Presidentes</h3>
-                <p>Este é o conteúdo da terceira aba.</p>
-              </div>
+                <div id="Tab3" class="tabcontent">
+                    <h3 class="titulo">Presidentes</h3>
+                        <p>
+                            <div class="objeto">
+                                <img src="img/cromo.svg" alt="jogador" class="jogador">
+                                <img src="img/cromo.svg" alt="jogador" class="jogador"></p>
+                            </div>
+                        <h3 class="titulo">Roupeiros</h3>
+                        <p>
+                            <div class="objeto">
+                                <img src="img/cromo.svg" alt="jogador" class="jogador">
+                                <img src="img/cromo.svg" alt="jogador" class="jogador">
+                                <img src="img/cromo.svg" alt="jogador" class="jogador">
+                                <img src="img/cromo.svg" alt="jogador" class="jogador">
+                            </div>
+                        </p>
+                        <h3 class="titulo">Treinadores</h3>
+                        <p>
+                            <div class="objeto">
+                                <img src="img/cromo.svg" alt="jogador" class="jogador">
+                                <img src="img/cromo.svg" alt="jogador" class="jogador">
+                                <img src="img/cromo.svg" alt="jogador" class="jogador">
+                                <img src="img/cromo.svg" alt="jogador" class="jogador">
+                                <img src="img/cromo.svg" alt="jogador" class="jogador">
+                                <img src="img/cromo.svg" alt="jogador" class="jogador">
+                                <img src="img/cromo.svg" alt="jogador" class="jogador">
+                                <img src="img/cromo.svg" alt="jogador" class="jogador">
+                                <img src="img/cromo.svg" alt="jogador" class="jogador">
+                                <img src="img/cromo.svg" alt="jogador" class="jogador">
+                                <img src="img/cromo.svg" alt="jogador" class="jogador">
+                                <img src="img/cromo.svg" alt="jogador" class="jogador">
+                                
+                            </div>
+                        </p>
+                    </div>
         </section>
 
         <footer>
@@ -163,5 +216,64 @@
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script src="javascript.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+        <script>
+            // Crie uma cena
+            var cena = new THREE.Scene();
+        
+            // Crie uma câmera
+            var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.z = 5;
+        
+            // Crie um renderizador
+            var renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.getElementById('modelo3D').appendChild(renderer.domElement);
+        
+            // Carregue o modelo OBJ
+            var loader = new THREE.OBJLoader();
+            loader.load('campodacovinha.obj', function (modelo) {
+                cena.add(modelo);
+            }, undefined, function (erro) {
+                console.error(erro);
+            });
+        
+            // Renderize a cena
+            function renderizar() {
+                requestAnimationFrame(renderizar);
+                renderer.render(cena, camera);
+            }
+            renderizar();
+        </script>
+
+        <script>
+            // Crie uma cena
+            var cena = new THREE.Scene();
+        
+            // Crie uma câmera
+            var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.z = 5;
+        
+            // Crie um renderizador
+            var renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.getElementById('modelo3D').appendChild(renderer.domElement);
+        
+            // Carregue o modelo OBJ
+            var loader = new THREE.OBJLoader();
+            loader.load('seu_modelo.obj', function (modelo) {
+                cena.add(modelo);
+            }, undefined, function (erro) {
+                console.error(erro);
+            });
+        
+            // Renderize a cena
+            function renderizar() {
+                requestAnimationFrame(renderizar);
+                renderer.render(cena, camera);
+            }
+            renderizar();
+        </script>
     </body>
 </html>

@@ -11,14 +11,14 @@
         <nav class="menu">
             <ul>
                 <li class="menufoto"><a class="logo">
-                    <img src="img/logo.svg" class="fas fa-home">
+                    <img src="Icons/logo.svg" class="fas fa-home">
                     <span class="nav-item"> São Paio Sc </span>
                 </a></li>
-                <li class="menufoto"><a href="index.html" class="iconmenu">
-                    <img src="img/logo.svg" class="fas fa-home">
+                <li class="menufoto"><a href="clube.html" class="iconmenu">
+                    <img src="Icons/logo.svg" class="fas fa-home">
                     <span class="nav-item"> Clube </span>
                 </a></li>
-                <li class="menufoto"><a href="index.html" class="iconmenu">
+                <li class="menufoto"><a href="escaloes.html" class="iconmenu">
                     <img src="Icons/bola.svg" class="fas fa-home">
                     <span class="nav-item"> Escalões </span>
                 </a></li>
@@ -26,43 +26,43 @@
                     <img src="Icons/socio.svg" class="fas fa-home">
                     <span class="nav-item"> Sócios </span>
                 </a></li>
-                <li class="menufoto"><a href="../noticias.html" class="iconmenu">
+                <li class="menufoto"><a href="noticias.html" class="iconmenu">
                     <img src="Icons/jornal.svg" class="fas fa-home">
                     <span class="nav-item"> Notícias </span>
                 </a></li>
-                <li class="menufoto"><a href="../agenda/jogo.html" class="iconmenu"> 
+                <li class="menufoto"><a href="agenda/jogo.html" class="iconmenu"> 
                     <img src="Icons/Agenda.svg" class="fas fa-home">
                     <span class="nav-item"> Agenda </span>
                 </a></li>
-                <li class="menufoto"><a href="../bilheteira.html" class="iconmenu">
+                <li class="menufoto"><a href="bilheteira.html" class="iconmenu">
                     <img src="Icons/bilhete.svg" class="fas fa-home">
                     <span class="nav-item"> Bilhetes </span>
                 </a></li>
-                <li class="menufoto"><a href="../Loja/loja.html" class="iconmenu">
+                <li class="menufoto"><a href="Loja/loja.html" class="iconmenu">
                     <img src="Icons/loja.svg" class="fas fa-home">
                     <span class="nav-item"> Loja </span>
                 </a></li>
-                <li class="menufoto"><a href="../index.html" class="iconmenu">
+                <li class="menufoto"><a href="index.html" class="iconmenu">
                     <img src="Icons/aplicacao.svg" class="fas fa-home">
                     <span class="nav-item"> App </span>
                 </a></li>
-                <li class="menufoto"><a href="../footer/contacto.html" class="iconmenu">
+                <li class="menufoto"><a href="footer/contacto.html" class="iconmenu">
                     <img src="Icons/apoio.svg" class="fas fa-home">
                     <span class="nav-item"> Apoio ao Adepto </span>
                 </a></li>
-                <li class="menufoto"><a href="../multimedia.html" class="iconmenu">
+                <li class="menufoto"><a href="multimedia.html" class="iconmenu">
                     <img src="Icons/camera.svg" class="fas fa-home">
                     <span class="nav-item"> Multimédia </span>
                 </a></li>
-                <li class="menufoto"><a href="../revista.html" class="iconmenu">
+                <li class="menufoto"><a href="revista.html" class="iconmenu">
                     <img src="Icons/revista.svg" class="fas fa-home">
                     <span class="nav-item"> Revista </iconmenu>
                 </a></li>
-                <li class="menufoto"><a href="../museu.html" class="iconmenu">
+                <li class="menufoto"><a href="museu.html" class="iconmenu">
                     <img src="Icons/taca.svg" class="fas fa-home">
                     <span class="nav-item"> Troféus/Museu </span>
                 </a></li>
-                <li class="menufoto"><a href="../patrocinadores.html" class="iconmenu">
+                <li class="menufoto"><a href="patrocinadores.html" class="iconmenu">
                     <img src="Icons/Patrocinadores.svg" class="fas fa-home">
                     <span class="nav-item"> Patrocinadores </span>
                 </a></li>
@@ -80,31 +80,37 @@
 
             <section class="conteudo">
                 <center>
-                <h1 class="textoloja">Login</h1>
-                <br>
-                <img src="Icons/logo.svg" alt="São Paio" class="imagemlogo">
-                <br>
-                <form action="PHP/validacao.php" method="post">
-                    <div class="login">
-                        <div class="logincaixa">
-                            <div class="logincaixatexto">
-                                <span>Nome/email</span>
-                                <input type="text" placeholder="Nome/email" name="utilizador" required>
-                            </div>             
-                        </div>
-                        <div class="logintexto">
-                            <div class="logincaixatexto">
-                                <span>Senha</span>
-                                <input type="password" placeholder="Senha" name="senha" required></input>
+                    <h1 class="textoloja">Login</h1>
+                    <br>
+                    <img src="Icons/logo.svg" alt="São Paio" class="imagemlogo">
+                    <br>
+                    <form action="PHP/validacao.php" method="post">
+                        <div class="login">
+                            <div class="logincaixa">
+                                <div class="logincaixatexto">
+                                    <span>Nome/email</span>
+                                    <input type="text" placeholder="Nome/email" name="utilizador" required>
+                                </div>             
                             </div>
-                            <div class="logincaixatexto">
-                                <input type="submit" value="Enviar">
+                            <div class="logintexto">
+                                    <div class="logincaixatexto">
+                                        <span>Senha</span>
+                                        <input type="password" id="senha" placeholder="Senha" name="senha" required>
+                                        <button type="button" class="reveal-password" onclick="revealPassword()">Revelar Senha</button>
+                                    </div>
+                                <div class="logincaixatexto">
+                                    <input type="submit" value="Entrar">
+                                </div>
                             </div>
                         </div>
+                    </form>
+                    <div class="logincaixatexto">
+                        <a href="criarconta.html"><button class="criarconta"> Criar Conta </button> </a>
                     </div>
-                </form>
-            </center>
+                </center>
             <br>
+            
+
             </section>
 
             <footer>
@@ -127,5 +133,15 @@
     
             <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
             <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            <script>
+                function revealPassword() {
+                    var senhaInput = document.getElementById("senha");
+                    if (senhaInput.type === "password") {
+                        senhaInput.type = "text";
+                    } else {
+                        senhaInput.type = "password";
+                    }
+                }
+            </script>
     </body>
 </html>
