@@ -488,6 +488,23 @@ article h1{
 
 /*Corpo Clube*/
 
+/* Estilizando as imagens com a classe campoclube */
+.campoclube {
+    display: block; /* Garante que as imagens sejam exibidas como blocos */
+    width: calc(33.33% - 10px); /* Define a largura das imagens como 33.33% do contêiner pai, menos a margem */
+    margin: 0 5px 20px 5px; /* Adiciona margens para separar as imagens */
+    border-radius: 10px; /* Adiciona uma borda arredondada às imagens */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil às imagens */
+    float: left; /* Faz com que as imagens flutuem à esquerda */
+}
+
+/* Limpa a flutuação para garantir que outros elementos não sejam afetados */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* Estilo para as abas */
 .tab {
     overflow: hidden;
@@ -1066,6 +1083,61 @@ article h1{
     display: inline-block;
     max-width: 200px;
     margin: 20px auto;
+}
+
+/*Museu*/
+/* Estilizando a galeria */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilizando cada figura */
+.gallery figure {
+    text-align: center;
+}
+
+/* Estilizando as imagens */
+.taca {
+    width: 500px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilizando as legendas */
+figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+/*Revista*/
+/* Estilos para o contêiner da revista */
+.revista {
+    display: flex; /* Faz com que as figuras dentro do contêiner sejam exibidas em linha */
+    flex-wrap: wrap; /* Permite que as figuras quebrem para a próxima linha em telas menores */
+    justify-content: center; /* Centraliza as figuras horizontalmente */
+    background-color: #f0f0f0; /* Cor de fundo do contêiner */
+    padding: 20px; /* Espaçamento interno do contêiner */
+}
+
+/* Estilos para as figuras */
+.revista figure {
+    margin: 10px; /* Espaçamento entre as figuras */
+    text-align: center; /* Centraliza o conteúdo das figuras */
+    width: 100%; /* Define a largura das figuras para ocupar a largura total do contêiner */
+    max-width: 550px; /* Define a largura máxima das figuras */
+}
+
+/* Estilos para as imagens */
+.revistafoto {
+    width: 100%; /* Largura das imagens ocupando toda a largura da figura */
+    height: auto; /* Altura automática para manter a proporção */
+    border-radius: 10px; /* Adiciona borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
 }
 
 /* Rodapé */
