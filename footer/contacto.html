@@ -5,24 +5,24 @@
         <title> São Paio Sc</title>
         <link rel="stylesheet" href="../telemovel.css">
 	    <link rel="stylesheet" media="screen and (min-width: 800px)" href="../style.css">
-        <link rel="shortcut icon" type="image/svg" href="../img/logo.svg"/>
+        <link rel="shortcut icon" type="image/svg" href="../Icons/logo.svg"/>
     </head>
     <body>
         <nav class="menu">
             <ul>
                 <li class="menufoto"><a class="logo">
-                    <img src="../img/logo.svg" class="fas fa-home">
+                    <img src="../Icons/logo.svg" class="fas fa-home">
                     <span class="nav-item"> São Paio Sc </span>
                 </a></li>
-                <li class="menufoto"><a href="index.html" class="iconmenu">
-                    <img src="../img/logo.svg" class="fas fa-home">
+                <li class="menufoto"><a href="../clube.html" class="iconmenu">
+                    <img src="../Icons/logo.svg" class="fas fa-home">
                     <span class="nav-item"> Clube </span>
                 </a></li>
-                <li class="menufoto"><a href="index.html" class="iconmenu">
+                <li class="menufoto"><a href="../escaloes.html" class="iconmenu">
                     <img src="../Icons/bola.svg" class="fas fa-home">
                     <span class="nav-item"> Escalões </span>
                 </a></li>
-                <li class="menufoto"><a href="Socios/socios.html" class="iconmenu">
+                <li class="menufoto"><a href="../socios.html" class="iconmenu">
                     <img src="../Icons/socio.svg" class="fas fa-home">
                     <span class="nav-item"> Sócios </span>
                 </a></li>
@@ -46,7 +46,7 @@
                     <img src="../Icons/aplicacao.svg" class="fas fa-home">
                     <span class="nav-item"> App </span>
                 </a></li>
-                <li class="menufoto"><a href="../footer/contacto.html" class="iconmenu">
+                <li class="menufoto"><a href="contacto.html" class="iconmenu">
                     <img src="../Icons/apoio.svg" class="fas fa-home">
                     <span class="nav-item"> Apoio ao Adepto </span>
                 </a></li>
@@ -78,16 +78,48 @@
             </section>
         </div>
 
-        <div class="contactUs">
-            <div class="title">
-                <h2> Contacta-nos</h2>
-            </div>
-            <div class="box">
+        <br>
+        <br>
 
-                <div class="contact form">
-                    <h3>Envia-nos uma mensagem</h3>
-                    <form action="contacto_bd.php">
-                        <div class="formBox">
+        <h1 class="textoloja"> Contacta-nos</h1>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="abas">
+            <button class="button" id="contact-btn">Como nos Contactar</button>
+            <div class="content" id="contact-content">
+                        <div>
+                            <span><ion-icon name="location-outline"></ion-icon></span>
+                            <p>Rua da Alegria(Campo da covinha)</p>
+                        </div>
+                        <div>
+                            <span><ion-icon name="mail-outline"></ion-icon></span>
+                            <a href="mailto:migueljuniorabc40@gmail.com">migueljuniorabc40@gmail.com</a>
+                        </div>
+                        <div>
+                            <span><ion-icon name="call-outline"></ion-icon></span>
+                            <a href="tel:+351935255407"> +351 935 255 407</a>
+                        </div>
+                        <ul class="sci">
+                            <li><a href=""><ion-icon name="logo-facebook"></ion-icon> </a></li>
+                            <li><a href=""><ion-icon name="logo-instagram"></ion-icon> </a></li>
+                            <li><a href=""><ion-icon name="logo-instagram"></ion-icon>  </a></li>
+                        </ul>
+            </div>
+            <br>
+            <button class="button" id="principal-btn">Onde nos encontrar(MAPS)</button>
+            <div class="content" id="principal-content">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11972.185634396958!2d-8.25411635!3d41.3947985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24ee8157fbcf27%3A0x9e0a6b68f2ffcbe5!2sCampo%20de%20futebol%20Associa%C3%A7%C3%A3o%20Desportiva%20S.Paio%20Sport%20Club!5e0!3m2!1spt-PT!2spt!4v1709484475240!5m2!1spt-PT!2spt" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            </div>
+            <br>
+            <button class="button" id="local-btn">Envia-nos um Email</button>
+            <div class="content" id="local-content">
+                    <form action="contacto_bd.php" class="questionariocontacto">
+
                             <div class="row50">
                                 <div class="inputBox">
                                     <span>Primeiro Nome</span>
@@ -122,53 +154,29 @@
                                     <input type="submit" value="Enviar">
                                 </div>
                             </div>
-                        </div>
                     </form>
-                </div>
-
-                <div class="contact info">
-                    <h3>Como nos contactar</h3>
-                    <div class="infoBox">
-                        <div>
-                            <span><ion-icon name="location-outline"></ion-icon></span>
-                            <p>Rua da Alegria</p>
-                        </div>
-                        <div>
-                            <span><ion-icon name="mail-outline"></ion-icon></span>
-                            <a href="mailto:migueljuniorabc40@gmail.com">migueljuniorabc40@gmail.com</a>
-                        </div>
-                        <div>
-                            <span><ion-icon name="call-outline"></ion-icon></span>
-                            <a href="tel:+351935255407"> +351 935 255 407</a>
-                        </div>
-                        <ul class="sci">
-                            <li><a href=""><ion-icon name="logo-facebook"></ion-icon> </a></li>
-                            <li><a href=""><ion-icon name="logo-instagram"></ion-icon> </a></li>
-                            <li><a href=""><ion-icon name="logo-instagram"></ion-icon>  </a></li>
-                            <li><a href=""><ion-icon name="logo-twitter"></ion-icon> </a></li>
-                        </ul>
-                    </div>   
-                </div>
-
-                <div class="contact map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11972.185634396958!2d-8.25411635!3d41.3947985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24ee8157fbcf27%3A0x9e0a6b68f2ffcbe5!2sCampo%20de%20futebol%20Associa%C3%A7%C3%A3o%20Desportiva%20S.Paio%20Sport%20Club!5e0!3m2!1spt-PT!2spt!4v1709484475240!5m2!1spt-PT!2spt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
             </div>
         </div>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
         <footer>
             <br>
             <article class="redessociais">
                 <a href="https://www.facebook.com/spaio"><ion-icon name="logo-facebook"></ion-icon></a>
                 <a href="https://www.instagram.com/spaiosc/"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="https://www.facebook.com/spaio"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.instagram.com/adspaiosc/"><ion-icon name="logo-instagram"></ion-icon></a>
             </article>
             <article class="rodape">
                 <a href="https://www.livroreclamacoes.pt/Pedido/Reclamacao" class="inforodape">Livro de reclamação</a>
-                <a href="footer/termos.html" class="inforodape">Termos & condições</a>
-                <a href="footer/protecaodados.html" class="inforodape">Privacidade</a>
-                <a href="footer/contacto.html" class="inforodape">Contactos</a>
+                <a href="termos.html" class="inforodape">Termos & condições</a>
+                <a href="protecaodados.html" class="inforodape">Privacidade</a>
+                <a href="contacto.html" class="inforodape">Contactos</a>
             </article>  
             <article class="direitos">
                 <p class="textorodape">Site Produzido por Miguel Almeida. Proibido a utilização deste site sem permissao do São Paio SC © 2023</p>
@@ -177,6 +185,27 @@
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <script>
+            // JavaScript para alternar a visibilidade do conteúdo das abas
+            document.getElementById("contact-btn").addEventListener("click", function() {
+                document.getElementById("contact-content").style.display = "block";
+                document.getElementById("principal-content").style.display = "none";
+                document.getElementById("local-content").style.display = "none";
+            });
+            
+            document.getElementById("principal-btn").addEventListener("click", function() {
+                document.getElementById("contact-content").style.display = "none";
+                document.getElementById("principal-content").style.display = "block";
+                document.getElementById("local-content").style.display = "none";
+            });
+        
+            document.getElementById("local-btn").addEventListener("click", function() {
+                document.getElementById("contact-content").style.display = "none";
+                document.getElementById("principal-content").style.display = "none";
+                document.getElementById("local-content").style.display = "block";
+            });
+        </script>
 
     </body>
 </html>
