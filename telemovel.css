@@ -1017,6 +1017,35 @@ article h1{
     justify-content: center;
 }
 
+/*Museu*/
+/*/* Estilizando a galeria */
+.gallery {
+    display: flex;
+    flex-direction: column; /* Altera a direção para uma coluna em telas menores */
+    align-items: center;
+}
+
+/* Estilizando cada figura */
+.gallery figure {
+    text-align: center;
+    margin-bottom: 20px; /* Adiciona espaço entre as figuras */
+}
+
+/* Estilizando as imagens */
+.taca {
+    max-width: 100%; /* Ajusta a largura máxima para o tamanho do contêiner */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilizando as legendas */
+figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}*/
+
 
 /*Patrocinadores*/
 .patrocinadores {

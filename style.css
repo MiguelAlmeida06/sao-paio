@@ -1089,20 +1089,22 @@ article h1{
 /* Estilizando a galeria */
 .gallery {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap; /* Permite que as figuras quebrem para a próxima linha se não couberem */
+    justify-content: space-around; /* Espaça as figuras uniformemente ao redor */
 }
 
 /* Estilizando cada figura */
 .gallery figure {
     text-align: center;
+    width: calc(33.33% - 20px); /* Define a largura de cada figura (menos a margem) para ocupar cerca de um terço da largura total */
+    margin-bottom: 20px; /* Adiciona espaço entre as figuras */
+    margin-right: 10px; /* Adiciona uma pequena margem à direita de cada figura */
 }
 
 /* Estilizando as imagens */
 .taca {
-    width: 500px;
+    width: 100%; /* Garante que a imagem preencha todo o espaço disponível dentro da figura */
     height: auto;
-    display: block;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
