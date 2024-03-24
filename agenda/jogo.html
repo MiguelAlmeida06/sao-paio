@@ -6,6 +6,10 @@
         <link rel="stylesheet" href="../telemovel.css">
 	    <link rel="stylesheet" media="screen and (min-width: 800px)" href="../style.css">
         <link rel="shortcut icon" type="image/svg" href="../Icons/logo.svg"/>
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.css' rel='stylesheet' />
+    <!-- Inclua os arquivos JavaScript do FullCalendar -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.js'></script>
     </head>
     <body>
         <nav class="menu">
@@ -14,15 +18,15 @@
                     <img src="../Icons/logo.svg" class="fas fa-home">
                     <span class="nav-item"> São Paio Sc </span>
                 </a></li>
-                <li class="menufoto"><a href="index.html" class="iconmenu">
+                <li class="menufoto"><a href="../clube.html" class="iconmenu">
                     <img src="../Icons/logo.svg" class="fas fa-home">
                     <span class="nav-item"> Clube </span>
                 </a></li>
-                <li class="menufoto"><a href="index.html" class="iconmenu">
+                <li class="menufoto"><a href="../escaloes.html" class="iconmenu">
                     <img src="../Icons/bola.svg" class="fas fa-home">
                     <span class="nav-item"> Escalões </span>
                 </a></li>
-                <li class="menufoto"><a href="Socios/socios.html" class="iconmenu">
+                <li class="menufoto"><a href="../socios.html" class="iconmenu">
                     <img src="../Icons/socio.svg" class="fas fa-home">
                     <span class="nav-item"> Sócios </span>
                 </a></li>
@@ -30,7 +34,7 @@
                     <img src="../Icons/jornal.svg" class="fas fa-home">
                     <span class="nav-item"> Notícias </span>
                 </a></li>
-                <li class="menufoto"><a href="../agenda/jogo.html" class="iconmenu"> 
+                <li class="menufoto"><a href="jogo.html" class="iconmenu"> 
                     <img src="../Icons/Agenda.svg" class="fas fa-home">
                     <span class="nav-item"> Agenda </span>
                 </a></li>
@@ -79,34 +83,48 @@
         </div>
 
         <section class="conteudo">
+            <div class="wrapper">
 
-        <table class="jogo">
-            <tr class="jogo">
-                <td class="x">Próximo jogo</td>
-                <td class="saopaio"><img src="../Icons/logo.svg" alt="São Paio" class="imagemsaopaio"></td>
-                <td class="x">x</td>
-                <td class="santoadriao"><img src="../img/santoadriao.png" alt="" class="imagemsaopaio"></td>
-            </tr>
-            <tr class="jogo">
-                <td class="x">17/03</td>
-                <td class="proximo1"><img src="../img/celoricense.png" alt="" class="imagemproximo1"></td>
-                <td class="x">x</td>
-                <td class="proximo2"><img src="../Icons/logo.svg" alt="São Paio" class="imagemproximo2"></td>
-              </tr>
-              <tr class="jogo">
-                <td class="x">23/03</td>
-                <td class="proximo1"><img src="../Icons/logo.svg" alt="São Paio" class="imagemproximo1"></td>
-                <td class="x">x</td>
-                <td class="proximo2"><img src="../img/pica.png" alt="" class="imagemproximo2"></td>
-              </tr>
-              <tr class="jogo">
-                <td class="x">31/03</td>
-                <td class="proximo1"><img src="../img/taipas.png" alt="" class="imagemproximo1"></td>
-                <td class="x">x</td>
-                <td class="proximo2"><img src="../Icons/logo.svg" alt="São Paio" class="imagemproximo2"></td>
-              </tr>
-          </table>
+                <div id="calendar"></div>
 
+                <div class="container">
+                    
+                    <h1>Agenda de Jogos</h1>
+                    <table class="game-table">
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Horário</th>
+                                <th>Equipe da Casa</th>
+                                <th>Local</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>25/03/2024</td>
+                                <td>15:00</td>
+                                <td class="team"><img src="../img/logo.svg" alt="Logo Time A"> São Paio</td>
+                                <td class="team"><img src="../img/logo.svg" alt="Logo Time B">  São Paio</td>
+                                <td class="stadium">Campo da covinha</td>
+                            </tr>
+                            <tr>
+                                <td>27/03/2024</td>
+                                <td>18:30</td>
+                                <td class="team"><img src="../img/logo.svg" alt="Logo Time C"> São Paio</td>
+                                <td class="team"><img src="../img/logo.svg" alt="Logo Time D"> São Paio</td>
+                                <td class="stadium">Campo da covinha</td>
+                            </tr>
+                            <tr>
+                                <td>30/03/2024</td>
+                                <td>20:00</td>
+                                <td class="team"><img src="../img/logo.svg" alt="Logo Time E"> São Paio</td>
+                                <td class="team"><img src="../img/logo.svg" alt="Logo Time F"> São Paio</td>
+                                <td class="stadium">Campo da covinha</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
 
         <footer>
@@ -114,7 +132,7 @@
             <article class="redessociais">
                 <a href="https://www.facebook.com/spaio"><ion-icon name="logo-facebook"></ion-icon></a>
                 <a href="https://www.instagram.com/spaiosc/"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="https://www.facebook.com/spaio"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.instagram.com/adspaiosc/"><ion-icon name="logo-instagram"></ion-icon></a>
             </article>
             <article class="rodape">
                 <a href="https://www.livroreclamacoes.pt/Pedido/Reclamacao" class="inforodape">Livro de reclamação</a>
@@ -129,5 +147,18 @@
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+        <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth'
+            });
+            calendar.render();
+        });
+
+        </script>
     </body>
 </html>
