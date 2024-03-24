@@ -5,24 +5,24 @@
         <title> São Paio Sc</title>
         <link rel="stylesheet" href="../telemovel.css">
 	    <link rel="stylesheet" media="screen and (min-width: 900px)" href="../style.css">
-        <link rel="shortcut icon" type="image/svg" href="../img/logo.svg"/>
+        <link rel="shortcut icon" type="image/svg" href="../Icons/logo.svg"/>
     </head>
     <body>
         <nav class="menu">
             <ul>
                 <li class="menufoto"><a class="logo">
-                    <img src="../img/logo.svg" class="fas fa-home">
+                    <img src="../Icons/logo.svg" class="fas fa-home">
                     <span class="nav-item"> São Paio Sc </span>
                 </a></li>
-                <li class="menufoto"><a href="index.html" class="iconmenu">
-                    <img src="../img/logo.svg" class="fas fa-home">
+                <li class="menufoto"><a href="../clube.html" class="iconmenu">
+                    <img src="../Icons/logo.svg" class="fas fa-home">
                     <span class="nav-item"> Clube </span>
                 </a></li>
-                <li class="menufoto"><a href="index.html" class="iconmenu">
+                <li class="menufoto"><a href="../escaloes.html" class="iconmenu">
                     <img src="../Icons/bola.svg" class="fas fa-home">
                     <span class="nav-item"> Escalões </span>
                 </a></li>
-                <li class="menufoto"><a href="Socios/socios.html" class="iconmenu">
+                <li class="menufoto"><a href="../socios.html" class="iconmenu">
                     <img src="../Icons/socio.svg" class="fas fa-home">
                     <span class="nav-item"> Sócios </span>
                 </a></li>
@@ -38,7 +38,7 @@
                     <img src="../Icons/bilhete.svg" class="fas fa-home">
                     <span class="nav-item"> Bilhetes </span>
                 </a></li>
-                <li class="menufoto"><a href="../Loja/loja.html" class="iconmenu">
+                <li class="menufoto"><a href="loja.html" class="iconmenu">
                     <img src="../Icons/loja.svg" class="fas fa-home">
                     <span class="nav-item"> Loja </span>
                 </a></li>
@@ -79,10 +79,17 @@
 
 
             <section class="loja">
-                <video class="fundoloja" src="../img/video.mp4" type="video/mp4"></video>
+                <video controls poster="../img/banner.jpg" class="videoclube">
+                    <source src="../img/saopaiovideo.mp4" type="video/mp4">
+                    <object>
+                      <embed src="demo.mp4" type="application/x-shockwave-flash" 
+                      allowfullscreen="false" allowscriptaccess="always">  		
+                    </object>
+                    Formato não suportado  
+                  </video>
                 <section class="camisolas">
                     <h1 class="textoloja"> E tu? Já escolhes-te a tua Camisola?</h1>
-                    <div id="produtos">
+                    <div id="produtos" class="objeto">
                         <div class="camisola1">
                             <img src="Fotos/CAMISA principal frente.svg" alt="">
                             <p class="preco">Por Apenas <br><span class="numeropreco"> 45€ </span></p>
@@ -96,7 +103,9 @@
                             <p class="preco">Por Apenas <br><span class="numeropreco"> 45€ </span></p>
                         </div>
                     </div>
-                    </section>
+
+                    <h1 class="textoloja">Não te esqueças que para ativar o sócio terás de te dirigir á nossa <a href="../clube.html" class="textoloja">Sede</a></h1>
+                </section>
             </section>
 
             <footer>
